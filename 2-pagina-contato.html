@@ -56,16 +56,21 @@
             Sinta-se à vontade para me enviar uma mensagem, e responderei o mais breve possível!
           </p>
 
-          <form  action="https://formsubmit.co/hudson_htec@outlook.com"method="POST"data-form>
+          <form  action="https://api.staticforms.xyz/submit" method="post" data-form>
+            <input type="hidden" name="accessKey" value="1cdb1101-82b5-4207-b3e5-1a133c6c9ac3">
+
             <div for="nome" class="input-box">
-                <input type="text" name="name" id="name" placeholder="Digite seu nome" required />
+              <input type="text" name="name" id="name" placeholder="Digite seu nome" required />
             </div>
+
             <div  for="email" class="input-box">
-                <input type="email" name="e-mail" id="email" placeholder="Digite seu e-mail" required />
+              <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required />
             </div>
+
             <div for="mensagem" class="input-box message-box">
-                <textarea id="message" placeholder="Digite sua mensagem" required></textarea>
+              <textarea id="message" name="message" placeholder="Digite sua mensagem" required></textarea>
             </div>
+
             <div class="button">
               <input type="button" data-button value="Enviar" />
             </div>
