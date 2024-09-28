@@ -512,6 +512,11 @@ footer .text span a:hover {
 }
 
 @media (max-width: 750px) {
+  .home {
+    background: url("Images/mobile750\ \(750\ x\ 1080\ px\).jpg") no-repeat left center/cover; 
+    background-attachment: scroll; 
+  }
+
   nav .navbar {
     width: 90%;
   }
@@ -590,6 +595,10 @@ footer .text span a:hover {
 }
 
 @media (max-width: 500px) {
+  .home {
+    background: url("Images/mobile500px.jpg") no-repeat left top/cover;
+  }
+
   .home .text-two {
     font-size: 55px;
   }
