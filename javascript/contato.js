@@ -12,10 +12,9 @@ class FormSubmit {
     displaySuccess() {
         this.form.innerHTML = this.settings.success;
         
-        // Redireciona para a página inicial após 3 segundos
         setTimeout(() => {
           window.location.href = "portfolio.html"; 
-        }, 3000); // 3000 milissegundos = 3 segundos
+        }, 3000); 
       }
   
     displayError() {
