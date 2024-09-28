@@ -9,8 +9,6 @@
 }
 
 body {
-  min-height: 100vh;
-  width: 100%;
   background: #ceffb8;
   display: flex;
   align-items: center;
@@ -158,30 +156,6 @@ body {
   border-color: #4070f4;
   background-color: #fff;
   color: #4070f4;
-}
-
-/* Footer CSS */
-
-footer {
-  background: #4070f4;
-  padding: 15px 0;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-}
-
-footer .text span {
-  font-size: 17px;
-  font-weight: 400;
-  color: #fff;
-}
-
-footer .text span a {
-  font-weight: 500;
-  color: #FFF;
-}
-
-footer .text span a:hover {
-  text-decoration: underline;
 }
 
 @media (max-width: 950px) {
