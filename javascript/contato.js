@@ -30,12 +30,6 @@ class FormSubmit {
       return formObject;
     }
   
-    onSubmission(event) {
-      event.preventDefault();
-      event.target.disabled = true;
-      event.target.innerText = "Enviando...";
-    }
-  
     async sendForm(event) {
       try {
         this.onSubmission(event);
