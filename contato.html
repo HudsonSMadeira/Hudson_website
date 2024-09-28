@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contato | Responsiva</title>
+    <link rel="stylesheet" href="contato.css" />
+
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+
+    <div class="btnvoltar">
+      <a href="portfolio.html"><button class="voltar">Voltar</button></a>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+
+        <div class="left-side">
+
+          <div class="address details">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="topic">Endereço</div>
+            <div class="text-one">Floriano PI</div>
+            <div class="text-two">Centro</div>
+          </div>
+
+          <div class="phone details">
+            <i class="fas fa-phone-alt"></i>
+            <div class="topic">Telefone</div>
+            <div class="text-one">+55 89 9 9400-0000</div>
+          </div>
+
+          <div class="email details">
+            <i class="fas fa-envelope"></i>
+            <div class="topic">Email</div>
+            <div class="text-one">hudson.bcdmix@gmail.com</div>
+          </div>
+
+        </div>
+
+        <div class="right-side">
+          <div class="topic-text">Envie-nos uma mensagem</div>
+          <p>
+            Disponível por e-mail ou telefone. Ficarei feliz em discutir oportunidades de colaboração,
+            esclarecer dúvidas ou fornecer mais informações sobre minhas habilidades e experiências. 
+            Sinta-se à vontade para me enviar uma mensagem, e responderei o mais breve possível!
+          </p>
+          <form  action="https://formsubmit.co/ajax/hudson_htec@outlook.com"method="POST"data-form>
+            <div for="nome" class="input-box">
+                <input type="text" id="name" placeholder="Digite seu nome" required />
+            </div>
+            <div  for="email" class="input-box">
+                <input type="email" id="email" placeholder="Digite seu e-mail" required />
+            </div>
+            <div for="mensagem" class="input-box message-box">
+                <textarea id="message" placeholder="Digite sua mensagem" required></textarea>
+            </div>
+            <div class="button">
+              <input type="button" data-button value="Enviar" />
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="contato.js"></script>
+  </body>
+</html>
