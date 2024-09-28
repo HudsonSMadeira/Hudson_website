@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
       {
-        "src": "package.json",
+        "src": "src/server.ts",
         "use": "@vercel/node"
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "/1-pagina-portfolio.html"
+        "dest": "src/server.ts"
       }
     ]
 }
