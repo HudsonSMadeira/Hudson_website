@@ -307,33 +307,33 @@ section .button button:hover {
   padding: 40px 0;
 }
 
-.skills .skills-details {
+.skills .skills-detalhes {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.skills-details .text {
+.skills-detalhes .text {
   width: 50%;
 }
 
-.skills-details p {
+.skills-detalhes p {
   color: #0E2431;
   text-align: justify;
 }
 
-.skills .skills-details .experience {
+.skills .skills-detalhes .experiencia {
   display: flex;
   align-items: center;
   margin: 0 10px;
 }
 
-.skills-details .experience .num {
+.skills-detalhes .experiencia .num {
   color: #0E2431;
   font-size: 80px;
 }
 
-.skills-details .experience .exp {
+.skills-detalhes .experiencia .exp {
   color: #0E2431;
   margin-left: 20px;
   font-size: 18px;
@@ -341,37 +341,37 @@ section .button button:hover {
   margin: 0 6px;
 }
 
-.skills-details .boxes {
+.skills-detalhes .boxes {
   width: 45%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.skills-details .box {
+.skills-detalhes .box {
   width: calc(100% / 2 - 20px);
   margin: 20px 0;
 }
 
-.skills-details .boxes .topic {
+.skills-detalhes .boxes .topicos {
   font-size: 20px;
   color: #4070f4;
 }
 
-.skills-details .boxes .per {
+.skills-detalhes .boxes .per {
   font-size: 60px;
   color: #4070f4;
 }
 
 /* Meus Serviços CSS */
 
-.services .boxes {
+.servicos .boxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.services .boxes .box {
+.servicos .boxes .box {
   margin: 20px 0;
   width: calc(100% / 3 - 20px);
   text-align: center;
@@ -382,12 +382,12 @@ section .button button:hover {
   transition: all 0.4s ease;
 }
 
-.services .boxes .box:hover {
+.servicos .boxes .box:hover {
   background: #4070f4;
   color: #fff;
 }
 
-.services .boxes .box .icon {
+.servicos .boxes .box .icon {
   height: 50px;
   width: 50px;
   background: #4070f4;
@@ -405,29 +405,29 @@ section .button button:hover {
   color: #4070f4;
 }
 
-.services .boxes .box:hover .topic,
+.services .boxes .box:hover .topicos,
 .services .boxes .box:hover p {
   color: #0E2431;
   transition: all 0.4s ease;
 }
 
-.services .boxes .box:hover .topic,
+.services .boxes .box:hover .topicos,
 .services .boxes .box:hover p {
   color: #fff;
 }
 
 /* Contato CSS */
 
-.contact {
+.contato {
   background: #F0F8FF;
 }
 
-.contact .content {
+.contato .content {
   margin: 0 auto;
   padding: 30px 0;
 }
 
-.contact .text {
+.contato .text {
   width: 80%;
   text-align: center;
   margin: auto;
