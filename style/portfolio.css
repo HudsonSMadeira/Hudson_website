@@ -209,7 +209,7 @@ section .content {
   font-family: 'Poppins', sans-serif;
 }
 
-.about .about-details {
+.sobre .sobre-detalhes {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -247,29 +247,29 @@ section .title span::after {
   transform: translateX(-50%);
 }
 
-.about .about-details .left {
+.sobre .sobre-detalhes .left {
   width: 50%;
 }
 
-.about .left img {
+.sobre .left img {
   height: 400px;
   width: 400px;
   object-fit: cover;
   border-radius: 12px;
 }
 
-.about-details .right {
+.sobre-detalhes .right {
   width: 55%;
 }
 
-section .topic {
+section .topicos {
   color: #0E2431;
   font-size: 25px;
   font-weight: 500;
   margin-bottom: 10px;
 }
 
-.about-details .right p {
+.sobre-detalhes .right p {
   text-align: justify;
   color: #0E2431;
 }
