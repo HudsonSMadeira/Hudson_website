@@ -484,30 +484,30 @@ footer .text span a:hover {
 }
 
 @media (max-width: 1000px) {
-  .about .about-details {
+  .sobre .sobre-detalhes {
     justify-content: center;
     flex-direction: column;
   }
 
-  .about .about-details .left {
+  .sobre .sobre-detalhes .left {
     display: flex;
     justify-content: center;
     width: 100%;
   }
 
-  .about-details .right {
+  .sobre-detalhes .right {
     width: 90%;
     margin: 40px 0;
   }
 
-  .services .boxes .box {
+  .servicos .boxes .box {
     margin: 20px 0;
     width: calc(100% / 2 - 20px);
   }
 }
 
 @media (max-width: 900px) {
-  .about .left img {
+  .sobre .left img {
     height: 350px;
     width: 350px;
   }
@@ -569,24 +569,24 @@ footer .text span a:hover {
     font-size: 35px;
   }
 
-  .skills .skills-details {
+  .skills .skills-detalhes {
     align-items: center;
     justify-content: center;
     flex-direction: column;
   }
 
-  .skills-details .text {
+  .skills-detalhes .text {
     width: 100%;
     margin-bottom: 50px;
   }
 
-  .skills-details .boxes {
+  .skills-detalhes .boxes {
     justify-content: center;
     align-items: center;
     width: 100%;
   }
 
-  .services .boxes .box {
+  .servicos .boxes .box {
     margin: 20px 0;
     width: 100%;
   }
@@ -613,7 +613,7 @@ footer .text span a:hover {
     font-size: 33px;
   }
 
-  .skills-details .boxes .per {
+  .skills-detalhes .boxes .per {
     font-size: 50px;
     color: #4070f4;
   }
