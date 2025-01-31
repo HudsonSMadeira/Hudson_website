@@ -769,7 +769,48 @@ section.active {
     cursor: pointer;
 }
 
-/* Responsividade */
+/* ------------------ Footer ------------------- */
+
+footer {
+    width: 100%;
+    bottom: 0;
+    opacity: 0; 
+    padding: 10px;
+    visibility: hidden;
+    text-align: center;
+    position: fixed; 
+    background-color: var(--blue);   
+}
+
+footer.active {
+    animation: show-footer 1.5s linear forwards;
+    animation-delay: 1.2s;
+}
+
+@keyframes show-footer {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+footer span {
+    font-size: 1rem;
+    font-weight: 1rem;
+    color: var(--white-color);
+}
+
+footer span a {
+    font-weight: 1rem;
+    color: var(--main-color);
+}
+
+footer span a:hover {
+    text-decoration: underline;
+    color: var(--white-color);
+}
+
+/* ----------------  Responsividade  ---------------- */
 
 @media screen and (max-width: 1200px) {
     header {
