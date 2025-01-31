@@ -4,13 +4,14 @@ const sections = document.querySelectorAll('section');
 const menuIcon = document.querySelector('#menu-icon');
 const navbar = document.querySelector('header nav');
 const footer = document.querySelector('footer');
+const homeLink = document.querySelector('.home');
 
 menuIcon.addEventListener('click', () => {
   menuIcon.classList.toggle('bx-x');
   navbar.classList.toggle('active');
 });
 
-const activePage = () => { 
+const activePage = (index) => { 
   const header = document.querySelector('header');
   const barsBox = document.querySelector('.bars-box');
 
@@ -36,17 +37,20 @@ const activePage = () => {
 
   menuIcon.classList.remove('bx-x');
   navbar.classList.remove('active');
+
+  if (index === 0) {
+    footer.classList.add('active');
+  }
 };
 
 navLinks.forEach((link, idx) => {
   link.addEventListener('click', () => {
     if (!link.classList.contains('active')) {
-      activePage();
+      activePage(idx);
       link.classList.add('active');
 
       setTimeout(() => {
         sections[idx].classList.add('active');
-        footer.classList.add('active');
       }, 1100);
     }
   });
@@ -54,12 +58,22 @@ navLinks.forEach((link, idx) => {
 
 logoLink.addEventListener('click', () => {
   if (!navLinks[0].classList.contains('active')) {
-    activePage();
+    activePage(0);
     navLinks[0].classList.add('active');
 
     setTimeout(() => {
       sections[0].classList.add('active');
-      footer.classList.add('active');
+    }, 1100);
+  }
+});
+
+homeLink.addEventListener('click', () => {
+  if (!navLinks[0].classList.contains('active')) {
+    activePage(0);
+    navLinks[0].classList.add('active');
+
+    setTimeout(() => {
+      sections[0].classList.add('active');
     }, 1100);
   }
 });
