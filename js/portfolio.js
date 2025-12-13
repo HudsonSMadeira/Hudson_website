@@ -15,43 +15,35 @@ const activePage = (index) => {
   const header = document.querySelector('header');
   const barsBox = document.querySelector('.bars-box');
 
-  header.classList.remove('active');
-  setTimeout(() => {
-    header.classList.add('active');
-  }, 1100);
+  // garantir que o header esteja visível imediatamente (removendo animação/deslocamento)
+  header.classList.add('active');
 
   navLinks.forEach(link => {
     link.classList.remove('active');
   });
 
-  barsBox.classList.remove('active');
-  setTimeout(() => {
-    barsBox.classList.add('active');
-  }, 1100);
+  barsBox.classList.add('active');
 
-  sections.forEach(section => {
-    section.classList.remove('active');
-  });
+  sections.forEach(section => section.classList.remove('active'));
 
-  footer.classList.remove('active'); 
+  footer.classList.remove('active');
 
+  // remover menu aberto e ícone imediatamente
   menuIcon.classList.remove('bx-x');
   navbar.classList.remove('active');
 
-  if (index === 0) {
-    footer.classList.add('active');
-  }
+  // mostrar a seção alvo imediatamente (sem delay)
+  sections[index].classList.add('active');
+
+  if (index === 0) footer.classList.add('active');
 };
 
 navLinks.forEach((link, idx) => {
   link.addEventListener('click', () => {
     if (!link.classList.contains('active')) {
+      // trocar página imediatamente, sem transição
       activePage(idx);
       link.classList.add('active');
-
-      setTimeout(() => {
-        sections[idx].classList.add('active');
-      }, 1100);
     }
   });
 });
@@ -60,10 +52,6 @@ logoLink.addEventListener('click', () => {
   if (!navLinks[0].classList.contains('active')) {
     activePage(0);
     navLinks[0].classList.add('active');
-
-    setTimeout(() => {
-      sections[0].classList.add('active');
-    }, 1100);
   }
 });
 
@@ -71,10 +59,6 @@ homeLink.addEventListener('click', () => {
   if (!navLinks[0].classList.contains('active')) {
     activePage(0);
     navLinks[0].classList.add('active');
-
-    setTimeout(() => {
-      sections[0].classList.add('active');
-    }, 1100);
   }
 });
 
