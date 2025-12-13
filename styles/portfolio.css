@@ -47,8 +47,11 @@ header {
 }
 
 header.active {
-    animation: show-header 1.5s linear forwards;
-    animation-delay: 1.2s;
+    /* Remover animação de entrada para navegação imediata */
+    animation: none !important;
+    animation-delay: 0s !important;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
 @keyframes show-header {
@@ -133,8 +136,12 @@ section {
 }
 
 section.active {
-    animation: show-content 1.5s linear forwards;
-    animation-delay: 1.6s;
+    /* Mostrar conteúdo imediatamente sem transição */
+    animation: none !important;
+    animation-delay: 0s !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    overflow: auto !important;
 }
 
 @keyframes show-content {
@@ -786,8 +793,11 @@ footer {
 }
 
 footer.active {
-    animation: show-footer 1.5s linear forwards;
-    animation-delay: 1.2s;
+    /* Remover animação do footer para visibilidade instantânea */
+    animation: none !important;
+    animation-delay: 0s !important;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
 @keyframes show-footer {
